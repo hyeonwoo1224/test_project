@@ -7,6 +7,7 @@ public class Main_project {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
+		cal_nayujin cal = new cal_nayujin();
 		
 		int num;
 		while(true) {
