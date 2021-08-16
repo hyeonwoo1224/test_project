@@ -2,15 +2,21 @@ package test_project;
 
 import java.util.Scanner;
 
+import test_project_seohee.count_seohee;
+
 public class Main_project {
 
 	public static void main(String[] args) {
 
+		
 		Scanner input = new Scanner(System.in);
 		
+		count_seohee cnt;
+		cnt = new count_seohee();
+
 		int num;
 		while(true) {
-		System.out.println("1.메뉴 선택");
+		System.out.println("1.메뉴 및 수량 선택");
 		System.out.println("2.소스 선택");
 		System.out.println("3.맵기 선택");
 		System.out.println("4.금액 확인");
@@ -21,8 +27,36 @@ public class Main_project {
 		case 1 :
 			System.out.println("1.짜장면 2.짬뽕 ");
 			System.out.println(">>>>>>");
-
+			num= input.nextInt();
+			
+			if(num==1) {
+				System.out.println("1.짜장면 추가  2. 짜장면 취소");
+				 int ja = input.nextInt();
+				if(ja == 1) {
+					cnt.jajangCntUp();
+					System.out.println("짜장면 갯수: " + cnt.jajangCnt);
+					System.out.println("짬뽕 갯수: " + cnt.jjamppongCnt);
+				} else if(ja == 2 && cnt.jajangCnt>=0){
+					cnt.jajangCntDown();
+					System.out.println("짜장면 갯수: " + cnt.jajangCnt);
+					System.out.println("짬뽕 갯수: " + cnt.jjamppongCnt);
+				}
+			}else {
+				System.out.println("1. 짬뽕 추가  2. 짬뽕 취소");
+				int jjam = input.nextInt();
+				if(jjam == 1) {
+					cnt.jjamppongCntUP();
+					System.out.println("짬뽕 갯수: " + cnt.jjamppongCnt);
+					System.out.println("짜장면 갯수: " + cnt.jajangCnt);
+				} else if(jjam == 2 && cnt.jjamppongCnt>=0) {
+					cnt.jjamppongCntDown();
+					System.out.println("짬뽕 갯수: " + cnt.jjamppongCnt);
+					System.out.println("짜장면 갯수: " + cnt.jajangCnt);
+				} else {System.out.println("번호를 확인해주세요.");}
+			}
 			break;
+
+
 
 		case 2 : System.out.println("소스 양 선택");
 			break;
