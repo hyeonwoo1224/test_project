@@ -96,9 +96,9 @@ public class Main_project {
          
       case 4 :
          System.out.println("주문을 확인합니다.");
-         System.out.println("짜장면 : ");
-         System.out.println("짬뽕 : ");
-         System.out.println("총 금액 : ");
+         System.out.println("짜장면 : " +cnt.jajang);
+         System.out.println("짬뽕 : "+cnt.jjamppon);
+         System.out.println("총 금액 : "+cnt.sum);
          break;
       
       default : 
