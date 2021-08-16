@@ -11,16 +11,11 @@ public class spicy_junhyooseok {
     public void spicyDown() {
        --spicy;
     }
+    public class spicy_junhyooseok01 {
     Scanner input = new Scanner(System.in);
+    spicy_junhyooseok t = new spicy_junhyooseok();
     
-    int ch = input.nextInt()
-	if(ch == 1) {
-		t.intensityUp();
-	}else if(ch == 2 && t.intensity>0)  {
-		t.intensityDown();
-	}
-	System.out.println("���� ǳ�� : "+t.intensity);
-}else {
-	System.out.println("������ ���� Ű����");
+    int ch = input.nextInt();
+    if ()
     
-}
+    		
