@@ -6,6 +6,7 @@ import java.util.Scanner;
 import test_project_seohee.count_seohee;
 
 import jajang_hyeonwoo.Jajang_hy;
+import test_project_nayujin.cal_nayujin;
 
 public class Main_project {
 
@@ -14,12 +15,11 @@ public class Main_project {
 
 		
 		Scanner input = new Scanner(System.in);
-<<<<<<< HEAD
+
 		
 		count_seohee cnt;
 		cnt = new count_seohee();
-=======
->>>>>>> yujin
+		cal_nayujin cal = new cal_nayujin();
 
 		int num;
 		while(true) {
