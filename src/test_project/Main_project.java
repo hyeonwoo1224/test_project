@@ -5,6 +5,11 @@ import java.util.Scanner;
 import test_project_seohee.count_seohee;
 import jajang_hyeonwoo.Jajang_hy;
 
+import test_project_seohee.count_seohee;
+
+import jajang_hyeonwoo.Jajang_hy;
+import test_project_nayujin.cal_nayujin;
+
 public class Main_project {
 
 	public static void main(String[] args) {
@@ -12,9 +17,11 @@ public class Main_project {
 
 		
 		Scanner input = new Scanner(System.in);
+
 		
 		count_seohee cnt;
 		cnt = new count_seohee();
+		cal_nayujin cal = new cal_nayujin();
 
 		int num;
 		while(true) {
@@ -33,6 +40,7 @@ public class Main_project {
 		case 1 :
 			System.out.println("1.¥��� 2.«�� ");
 			System.out.println(">>>>>>");
+
 			num= input.nextInt();
 			
 			if(num==1) {
@@ -61,6 +69,10 @@ public class Main_project {
 				} else {System.out.println("��ȣ�� Ȯ�����ּ���.");}
 			}
 			hy.jajanInput();
+
+
+			hy.jajanInput();
+
 
 			break;
 
