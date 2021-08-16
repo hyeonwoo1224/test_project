@@ -2,12 +2,12 @@ package test_project;
 
 import java.util.Scanner;
 
-import jajang_hyeonwoo.Jajang_hyeonwoo;
+import jajang_hyeonwoo.Jajang_hy;
 
 public class Main_project {
 
 	public static void main(String[] args) {
-		Jajang_hyeonwoo hy = new Jajang_hyeonwoo();
+		Jajang_hy hy = new Jajang_hy();
 
 		Scanner input = new Scanner(System.in);
 		
