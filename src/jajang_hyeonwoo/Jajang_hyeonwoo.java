@@ -7,17 +7,17 @@ public class Jajang_hyeonwoo {
 	
 	public void jajanInput() {
 		Scanner input = new Scanner(System.in);
-		System.out.println("==== ¾ç ¼³Á¤ ====");
-		System.out.println("1.º¸Åë 2.°ö¹è±â 3.ÁÖ¹® Ãë¼Ò");
+		System.out.println("==== ì–‘ ì„¤ì • ====");
+		System.out.println("1.ë³´í†µ 2.ê³±ë°°ê¸° 3.ì£¼ë¬¸ ì·¨ì†Œ");
 		int n1;
 		n1 = input.nextInt();
 		if(n1 == 1) jajangPlus();
 		else if(n1 == 2) jajangPlus();
-		else System.out.println("ÁÖ¹®Ãë¼Ò");
+		else System.out.println("ì£¼ë¬¸ì·¨ì†Œ");
 		
 		}
 	private void jajangPlus() {
 		jajang++;
-		System.out.println("Â¥Àå1Áõ°¡");
+		System.out.println("ì§œì¥1ì¦ê°€");
 	}
 }

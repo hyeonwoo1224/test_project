@@ -5,14 +5,14 @@ import java.util.Scanner;
 
 import test_project_seohee.count_seohee;
 
-import jajang_hyeonwoo.Jajang_hy;
+import jajang_hyeonwoo.Jajang_hyeonwoo;
 import test_project_jungyooseok.spicy_junhyooseok;
 import test_project_nayujin.cal_nayujin;
 
 public class Main_project {
 
    public static void main(String[] args) {
-      Jajang_hy hy = new Jajang_hy();
+      Jajang_hyeonwoo hy = new Jajang_hyeonwoo();
 
       
       Scanner input = new Scanner(System.in);
@@ -25,9 +25,8 @@ public class Main_project {
       int num;
       while(true) {
       System.out.println("1.메뉴 및 수량 선택");
-      System.out.println("2.소스 선택");
-      System.out.println("3.맵기 선택");
-      System.out.println("4.금액 확인");
+      System.out.println("2.맵기 선택");
+      System.out.println("3.금액 확인");
       System.out.println(">>>>>>");
 
 
@@ -72,14 +71,8 @@ public class Main_project {
 
 
          break;
-
-
-
-      case 2 : System.out.println("소스 양 선택");
-         break;
          
-         
-      case 3 :
+      case 2 :
          System.out.println("1. 맵기정도 UP, 2. 맵기정도 Down");
     	    spicy_junhyooseok t = new spicy_junhyooseok();
     	    
@@ -94,7 +87,7 @@ public class Main_project {
     
          break;
          
-      case 4 :
+      case 3 :
          System.out.println("주문을 확인합니다.");
          System.out.println("짜장면 : " +cnt.jajang);
          System.out.println("짬뽕 : "+cnt.jjamppon);
