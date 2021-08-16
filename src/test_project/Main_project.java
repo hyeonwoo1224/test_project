@@ -2,11 +2,11 @@ package test_project;
 
 import java.util.Scanner;
 
-<<<<<<< HEAD
+
 import test_project_seohee.count_seohee;
-=======
+
 import jajang_hyeonwoo.Jajang_hy;
->>>>>>> 537e984c591e7857c195520d62143ebfa761eeb2
+
 
 public class Main_project {
 
@@ -36,7 +36,7 @@ public class Main_project {
 		case 1 :
 			System.out.println("1.짜장면 2.짬뽕 ");
 			System.out.println(">>>>>>");
-<<<<<<< HEAD
+
 			num= input.nextInt();
 			
 			if(num==1) {
@@ -64,10 +64,10 @@ public class Main_project {
 					System.out.println("짜장면 갯수: " + cnt.jajangCnt);
 				} else {System.out.println("번호를 확인해주세요.");}
 			}
-=======
+
 			hy.jajanInput();
 
->>>>>>> 537e984c591e7857c195520d62143ebfa761eeb2
+
 			break;
 
 
