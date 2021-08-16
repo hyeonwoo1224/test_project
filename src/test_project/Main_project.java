@@ -2,10 +2,8 @@ package test_project;
 
 import java.util.Scanner;
 
-
-import test_project_seohee.count_seohee;
-
 import jajang_hyeonwoo.Jajang_hy;
+import test_project_seohee.count_seohee;
 
 
 public class Main_project {
@@ -13,7 +11,6 @@ public class Main_project {
 	public static void main(String[] args) {
 		Jajang_hy hy = new Jajang_hy();
 
-		
 		Scanner input = new Scanner(System.in);
 		
 		count_seohee cnt;
