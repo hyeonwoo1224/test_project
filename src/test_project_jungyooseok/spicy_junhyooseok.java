@@ -1,5 +1,7 @@
 package test_project_jungyooseok;
 
+import java.util.Scanner;
+
 public class spicy_junhyooseok {
     public int spicy;
     
@@ -9,4 +11,5 @@ public class spicy_junhyooseok {
     public void spicyDown() {
        --spicy;
     }
+    
 }

@@ -2,91 +2,109 @@ package test_project;
 
 import java.util.Scanner;
 
-import jajang_hyeonwoo.Jajang_hy;
+
 import test_project_seohee.count_seohee;
+
+import jajang_hyeonwoo.Jajang_hy;
+import test_project_jungyooseok.spicy_junhyooseok;
+import test_project_nayujin.cal_nayujin;
 
 
 public class Main_project {
 
-	public static void main(String[] args) {
-		Jajang_hy hy = new Jajang_hy();
+   public static void main(String[] args) {
+      Jajang_hy hy = new Jajang_hy();
 
-		Scanner input = new Scanner(System.in);
-		
-		count_seohee cnt;
-		cnt = new count_seohee();
+      
+      Scanner input = new Scanner(System.in);
 
-		int num;
-		while(true) {
-		System.out.println("1.¸Ş´º ¹× ¼ö·® ¼±ÅÃ");
-		System.out.println("2.¼Ò½º ¼±ÅÃ");
-		System.out.println("3.¸Ê±â ¼±ÅÃ");
-		System.out.println("4.±İ¾× È®ÀÎ");
-		System.out.println(">>>>>>");
+      
+      count_seohee cnt;
+      cnt = new count_seohee();
+      cal_nayujin cal = new cal_nayujin();
+
+      int num;
+      while(true) {
+      System.out.println("1.ë©”ë‰´ ë° ìˆ˜ëŸ‰ ì„ íƒ");
+      System.out.println("2.ì†ŒìŠ¤ ì„ íƒ");
+      System.out.println("3.ë§µê¸° ì„ íƒ");
+      System.out.println("4.ê¸ˆì•¡ í™•ì¸");
+      System.out.println(">>>>>>");
 
 
 
-		num = input.nextInt();
+      num = input.nextInt();
 
-		
-		switch(num) {
-		case 1 :
-			System.out.println("1.Â¥Àå¸é 2.Â«»Í ");
-			System.out.println(">>>>>>");
+      
+      switch(num) {
+      case 1 :
+         System.out.println("1.ì§œì¥ë©´ 2.ì§¬ë½• ");
+         System.out.println(">>>>>>");
 
-			num= input.nextInt();
-			
-			if(num==1) {
-				System.out.println("1.Â¥Àå¸é Ãß°¡  2. Â¥Àå¸é Ãë¼Ò");
-				 int ja = input.nextInt();
-				if(ja == 1) {
-					cnt.jajangCntUp();
-					System.out.println("Â¥Àå¸é °¹¼ö: " + cnt.jajangCnt);
-					System.out.println("Â«»Í °¹¼ö: " + cnt.jjamppongCnt);
-				} else if(ja == 2 && cnt.jajangCnt>=0){
-					cnt.jajangCntDown();
-					System.out.println("Â¥Àå¸é °¹¼ö: " + cnt.jajangCnt);
-					System.out.println("Â«»Í °¹¼ö: " + cnt.jjamppongCnt);
-				}
-			}else {
-				System.out.println("1. Â«»Í Ãß°¡  2. Â«»Í Ãë¼Ò");
-				int jjam = input.nextInt();
-				if(jjam == 1) {
-					cnt.jjamppongCntUP();
-					System.out.println("Â«»Í °¹¼ö: " + cnt.jjamppongCnt);
-					System.out.println("Â¥Àå¸é °¹¼ö: " + cnt.jajangCnt);
-				} else if(jjam == 2 && cnt.jjamppongCnt>=0) {
-					cnt.jjamppongCntDown();
-					System.out.println("Â«»Í °¹¼ö: " + cnt.jjamppongCnt);
-					System.out.println("Â¥Àå¸é °¹¼ö: " + cnt.jajangCnt);
-				} else {System.out.println("¹øÈ£¸¦ È®ÀÎÇØÁÖ¼¼¿ä.");}
+         num= input.nextInt();
+         
+         if(num==1) {
+            System.out.println("1.ì§œì¥ë©´ ì¶”ê°€  2. ì§œì¥ë©´ ì·¨ì†Œ");
+             int ja = input.nextInt();
+            if(ja == 1) {
+               cnt.jajangCntUp();
+               System.out.println("ì§œì¥ë©´ ê°¯ìˆ˜: " + cnt.jajangCnt);
+               System.out.println("ì§¬ë½• ê°¯ìˆ˜: " + cnt.jjamppongCnt);
+            } else if(ja == 2 && cnt.jajangCnt>=0){
+               cnt.jajangCntDown();
+               System.out.println("ì§œì¥ë©´ ê°¯ìˆ˜: " + cnt.jajangCnt);
+               System.out.println("ì§¬ë½• ê°¯ìˆ˜: " + cnt.jjamppongCnt);
+            }
+         }else {
+            System.out.println("1. ì§¬ë½• ì¶”ê°€  2. ì§¬ë½• ì·¨ì†Œ");
+            int jjam = input.nextInt();
+            if(jjam == 1) {
+               cnt.jjamppongCntUP();
+               System.out.println("ì§¬ë½• ê°¯ìˆ˜: " + cnt.jjamppongCnt);
+               System.out.println("ì§œì¥ë©´ ê°¯ìˆ˜: " + cnt.jajangCnt);
+            } else if(jjam == 2 && cnt.jjamppongCnt>=0) {
+               cnt.jjamppongCntDown();
+               System.out.println("ì§¬ë½• ê°¯ìˆ˜: " + cnt.jjamppongCnt);
+               System.out.println("ì§œì¥ë©´ ê°¯ìˆ˜: " + cnt.jajangCnt);
+            } else {System.out.println("ë²ˆí˜¸ë¥¼ í™•ì¸í•´ì£¼ì„¸ìš”.");}
+         }
+
+         hy.jajanInput();
+
+
+         break;
+
+
+
+      case 2 : System.out.println("ì†ŒìŠ¤ ì–‘ ì„ íƒ");
+         break;
+         
+         
+      case 3 :
+         System.out.println("1. ë§µê¸°ì •ë„ UP, 2. ë§µê¸°ì •ë„ Down");
+    	    spicy_junhyooseok t = new spicy_junhyooseok();
+    	    
+    	    int ch;
+    	    ch = input.nextInt();
+    	    if(ch == 1) {
+				t.spicyUp();
+			}else if(ch == 2 && t.spicy>0)  {
+				t.spicyDown();
 			}
-
-			hy.jajanInput();
-
-
-			break;
-
-
-
-		case 2 : System.out.println("¼Ò½º ¾ç ¼±ÅÃ");
-			break;
-			
-			
-		case 3 :
-			System.out.println("1. ¸Ê±âÁ¤µµ UP, 2. ¸Ê±âÁ¤µµ Down");
-			break;
-			
-		case 4 :
-			System.out.println("ÁÖ¹®À» È®ÀÎÇÕ´Ï´Ù.");
-			System.out.println("Â¥Àå¸é : ");
-			System.out.println("Â«»Í : ");
-			System.out.println("ÃÑ ±İ¾× : ");
-			break;
-		
-		default : 
-			System.out.println("´Ù½Ã ¼±ÅÃÇÏ¼¼¿ä"); 
-		}
-	}
+			System.out.println("í˜„ì¬ë§µê¸° ë‹¨ê³„ : "+t.spicy);
+    
+         break;
+         
+      case 4 :
+         System.out.println("ì£¼ë¬¸ì„ í™•ì¸í•©ë‹ˆë‹¤.");
+         System.out.println("ì§œì¥ë©´ : ");
+         System.out.println("ì§¬ë½• : ");
+         System.out.println("ì´ ê¸ˆì•¡ : ");
+         break;
+      
+      default : 
+         System.out.println("ë‹¤ì‹œ ì„ íƒí•˜ì„¸ìš”"); 
+      }
+   }
 }
 }
