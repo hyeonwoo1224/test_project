@@ -2,9 +2,12 @@ package test_project;
 
 import java.util.Scanner;
 
+import jajang_hyeonwoo.Jajang_hy;
+
 public class Main_project {
 
 	public static void main(String[] args) {
+		Jajang_hy hy = new Jajang_hy();
 
 		Scanner input = new Scanner(System.in);
 		
@@ -15,12 +18,17 @@ public class Main_project {
 		System.out.println("3.¸Ê±â ¼±ÅÃ");
 		System.out.println("4.±İ¾× È®ÀÎ");
 		System.out.println(">>>>>>");
+
+
+
 		num = input.nextInt();
+
 		
 		switch(num) {
 		case 1 :
 			System.out.println("1.Â¥Àå¸é 2.Â«»Í ");
 			System.out.println(">>>>>>");
+			hy.jajanInput();
 
 			break;
 
