@@ -1,4 +1,4 @@
-package test_project;
+package test_project_nayujin;
 
 public class cal_nayujin {
 	int jajang = 0, jjamppong = 0,
@@ -23,3 +23,6 @@ public class cal_nayujin {
 				}	
 			}
 
+
+
+}
