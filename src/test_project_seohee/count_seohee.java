@@ -5,7 +5,7 @@ public class count_seohee {
 
 	public int jajangCnt = 0;
 	public int jjamppongCnt = 0;
-	int jajang =0, jjamppon=0,sum=jajang+jjamppon;
+	int jajang =0, jjamppon=0,sum;
 	
 	public void jajangCntUp() {
 		jajangCnt++;
