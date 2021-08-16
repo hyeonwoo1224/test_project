@@ -2,6 +2,8 @@ package test_project;
 
 import java.util.Scanner;
 
+import test_project_seohee.count_seohee;
+import jajang_hyeonwoo.Jajang_hy;
 
 import test_project_seohee.count_seohee;
 
@@ -23,10 +25,10 @@ public class Main_project {
 
 		int num;
 		while(true) {
-		System.out.println("1.¸Þ´º ¹× ¼ö·® ¼±ÅÃ");
-		System.out.println("2.¼Ò½º ¼±ÅÃ");
-		System.out.println("3.¸Ê±â ¼±ÅÃ");
-		System.out.println("4.±Ý¾× È®ÀÎ");
+		System.out.println("1.ï¿½Þ´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("2.ï¿½Ò½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("3.ï¿½Ê±ï¿½ ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("4.ï¿½Ý¾ï¿½ È®ï¿½ï¿½");
 		System.out.println(">>>>>>");
 
 
@@ -36,36 +38,38 @@ public class Main_project {
 		
 		switch(num) {
 		case 1 :
-			System.out.println("1.Â¥Àå¸é 2.Â«»Í ");
+			System.out.println("1.Â¥ï¿½ï¿½ï¿½ 2.Â«ï¿½ï¿½ ");
 			System.out.println(">>>>>>");
 
 			num= input.nextInt();
 			
 			if(num==1) {
-				System.out.println("1.Â¥Àå¸é Ãß°¡  2. Â¥Àå¸é Ãë¼Ò");
+				System.out.println("1.Â¥ï¿½ï¿½ï¿½ ï¿½ß°ï¿½  2. Â¥ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½");
 				 int ja = input.nextInt();
 				if(ja == 1) {
 					cnt.jajangCntUp();
-					System.out.println("Â¥Àå¸é °¹¼ö: " + cnt.jajangCnt);
-					System.out.println("Â«»Í °¹¼ö: " + cnt.jjamppongCnt);
+					System.out.println("Â¥ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " + cnt.jajangCnt);
+					System.out.println("Â«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " + cnt.jjamppongCnt);
 				} else if(ja == 2 && cnt.jajangCnt>=0){
 					cnt.jajangCntDown();
-					System.out.println("Â¥Àå¸é °¹¼ö: " + cnt.jajangCnt);
-					System.out.println("Â«»Í °¹¼ö: " + cnt.jjamppongCnt);
+					System.out.println("Â¥ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " + cnt.jajangCnt);
+					System.out.println("Â«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " + cnt.jjamppongCnt);
 				}
 			}else {
-				System.out.println("1. Â«»Í Ãß°¡  2. Â«»Í Ãë¼Ò");
+				System.out.println("1. Â«ï¿½ï¿½ ï¿½ß°ï¿½  2. Â«ï¿½ï¿½ ï¿½ï¿½ï¿½");
 				int jjam = input.nextInt();
 				if(jjam == 1) {
 					cnt.jjamppongCntUP();
-					System.out.println("Â«»Í °¹¼ö: " + cnt.jjamppongCnt);
-					System.out.println("Â¥Àå¸é °¹¼ö: " + cnt.jajangCnt);
+					System.out.println("Â«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " + cnt.jjamppongCnt);
+					System.out.println("Â¥ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " + cnt.jajangCnt);
 				} else if(jjam == 2 && cnt.jjamppongCnt>=0) {
 					cnt.jjamppongCntDown();
-					System.out.println("Â«»Í °¹¼ö: " + cnt.jjamppongCnt);
-					System.out.println("Â¥Àå¸é °¹¼ö: " + cnt.jajangCnt);
-				} else {System.out.println("¹øÈ£¸¦ È®ÀÎÇØÁÖ¼¼¿ä.");}
+					System.out.println("Â«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " + cnt.jjamppongCnt);
+					System.out.println("Â¥ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " + cnt.jajangCnt);
+				} else {System.out.println("ï¿½ï¿½È£ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.");}
 			}
+			hy.jajanInput();
+
 
 			hy.jajanInput();
 
@@ -74,23 +78,23 @@ public class Main_project {
 
 
 
-		case 2 : System.out.println("¼Ò½º ¾ç ¼±ÅÃ");
+		case 2 : System.out.println("ï¿½Ò½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 			break;
 			
 			
 		case 3 :
-			System.out.println("1. ¸Ê±âÁ¤µµ UP, 2. ¸Ê±âÁ¤µµ Down");
+			System.out.println("1. ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ UP, 2. ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ Down");
 			break;
 			
 		case 4 :
-			System.out.println("ÁÖ¹®À» È®ÀÎÇÕ´Ï´Ù.");
-			System.out.println("Â¥Àå¸é : ");
-			System.out.println("Â«»Í : ");
-			System.out.println("ÃÑ ±Ý¾× : ");
+			System.out.println("ï¿½Ö¹ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
+			System.out.println("Â¥ï¿½ï¿½ï¿½ : ");
+			System.out.println("Â«ï¿½ï¿½ : ");
+			System.out.println("ï¿½ï¿½ ï¿½Ý¾ï¿½ : ");
 			break;
 		
 		default : 
-			System.out.println("´Ù½Ã ¼±ÅÃÇÏ¼¼¿ä"); 
+			System.out.println("ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½"); 
 		}
 	}
 }
