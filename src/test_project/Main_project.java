@@ -1,9 +1,16 @@
 package test_project;
 
+import java.util.Scanner;
+
+import jajang_hyeonwoo.Jajang_hyeonwoo;
+
 public class Main_project {
 
 	public static void main(String[] args) {
+		Jajang_hyeonwoo hy = new Jajang_hyeonwoo();
 
+		Scanner input = new Scanner(System.in);
+		
 		int num;
 		while(true) {
 		System.out.println("1.메뉴 선택");
@@ -12,11 +19,16 @@ public class Main_project {
 		System.out.println("4.금액 확인");
 		System.out.println(">>>>>>");
 
+
+
+		num = input.nextInt();
+
 		
 		switch(num) {
 		case 1 :
 			System.out.println("1.짜장면 2.짬뽕 ");
 			System.out.println(">>>>>>");
+			hy.jajanInput();
 
 			break;
 
