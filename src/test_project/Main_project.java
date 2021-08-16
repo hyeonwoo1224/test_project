@@ -14,9 +14,12 @@ public class Main_project {
 
 		
 		Scanner input = new Scanner(System.in);
+<<<<<<< HEAD
 		
 		count_seohee cnt;
 		cnt = new count_seohee();
+=======
+>>>>>>> yujin
 
 		int num;
 		while(true) {
