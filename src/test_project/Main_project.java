@@ -8,6 +8,7 @@ import test_project_seohee.count_seohee;
 import jajang_hyeonwoo.Jajang_hyeonwoo;
 import test_project_jungyooseok.spicy_junhyooseok;
 import test_project_nayujin.cal_nayujin;
+import test_project_nayujin.calc_yujin;
 
 public class Main_project {
 
@@ -21,7 +22,7 @@ public class Main_project {
       count_seohee cnt;
       cnt = new count_seohee();
       cal_nayujin cal = new cal_nayujin();
-
+      calc_yujin cy = new calc_yujin();
       int num;
       while(true) {
       System.out.println("1.메뉴 및 수량 선택");
@@ -89,10 +90,16 @@ public class Main_project {
          
       case 3 :
          System.out.println("주문을 확인합니다.");
+         System.out.println("1.자동계산  2.금액확인");
+         num= input.nextInt();
+         if(num==1) {
+        	 System.out.println();
+        	 
+         }else {
          System.out.println("짜장면 : " +cnt.jajang);
          System.out.println("짬뽕 : "+cnt.jjamppon);
          System.out.println("총 금액 : "+cnt.sum);
-         break;
+         }break;
       
       default : 
          System.out.println("다시 선택하세요"); 
